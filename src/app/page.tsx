@@ -17,8 +17,8 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row gap-12 lg:gap-24 relative z-10">
             
             {/* Left Column: Photo */}
-            <div className="lg:w-1/3 flex items-start justify-center lg:justify-start">
-              <div className="relative w-full aspect-[3/4] md:aspect-square lg:aspect-[3/4] max-w-sm mx-auto lg:mx-0">
+            <div className="lg:w-2/5 flex items-start justify-center lg:justify-start">
+              <div className="relative w-full aspect-[3/4] md:aspect-square lg:aspect-[3/4] max-w-md lg:max-w-lg mx-auto lg:mx-0">
                 <Image
                   src="/images/profile.jpg"
                   alt="Designer B Profile"
@@ -33,7 +33,7 @@ export default function Home() {
             </div>
 
             {/* Right Column: Text & Stats */}
-            <div className="lg:w-2/3 space-y-8 flex flex-col justify-center">
+            <div className="lg:w-3/5 space-y-8 flex flex-col justify-center">
               <div>
                 <h1 className="text-5xl md:text-7xl font-black font-sans leading-[1.1] tracking-tight mb-12">
                   <span className="block text-white">Hi, I'm</span>
