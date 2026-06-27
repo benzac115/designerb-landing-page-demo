@@ -16,7 +16,13 @@ export const projects: Project[] = [
     description: "Water is the soul of every great bowl. Sendo Ramen was born from the concept of 'ramen from the stream' — a newly opened restaurant where every element flows with intention.",
     image: "/images/framer01.png",
     tags: ["Logo Design", "Art Direction", "Branding"],
-    gallery: ["/images/work01.jpg", "/images/work02.jpg", "/images/work03.jpg"],
+    gallery: [
+      "/images/sendo-ramen-gallery-1.png",
+      "/images/sendo-ramen-gallery-2.png",
+      "/images/sendo-ramen-gallery-3.png",
+      "/images/sendo-ramen-gallery-4.jpg",
+      "/images/sendo-ramen-gallery-5.jpg"
+    ],
   },
   {
     id: "02",
