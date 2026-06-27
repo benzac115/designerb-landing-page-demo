@@ -5,6 +5,7 @@ import PortfolioGrid from "@/components/PortfolioGrid";
 import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ServicesList from "@/components/ServicesList";
 
 export default function Home() {
   return (
@@ -68,6 +69,8 @@ export default function Home() {
           </div>
         </section>
 
+        <ServicesList />
+        
         <PortfolioGrid />
         <Pricing />
         <Contact />
