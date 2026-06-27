@@ -69,35 +69,7 @@ export default function Home() {
                 {/* Embedded Services List */}
                 <ServicesList />
 
-                {/* Hero Actions */}
-                <div className="flex flex-col sm:flex-row items-center gap-4 pt-8">
-                  <a
-                    href="/#works"
-                    className="w-full sm:w-auto px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-white/90 shadow-[0_4px_20px_rgba(255,255,255,0.15)] hover:shadow-[0_4px_25px_rgba(255,255,255,0.25)] hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center space-x-2"
-                  >
-                    <span>View My Work</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    href="/#contact"
-                    className="w-full sm:w-auto px-8 py-4 bg-transparent text-white font-semibold rounded-full border border-white/20 hover:bg-white/5 hover:border-white/40 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center"
-                  >
-                    Let's Talk
-                  </a>
-                </div>
+
               </div>
             </div>
 
