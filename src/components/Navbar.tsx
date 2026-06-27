@@ -30,7 +30,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2 group">
           <div className="relative w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.2)] group-hover:scale-105 transition-transform overflow-hidden">
-            <Image src="/images/logo-face.png" alt="Designer B Logo" fill className="object-cover p-1" sizes="32px" />
+            <Image src="/images/logo-face.png" alt="Designer B Logo" fill className="object-contain p-1" sizes="32px" />
           </div>
           <span className="font-sans font-semibold text-lg tracking-tight text-white group-hover:text-accent-blue-light transition-colors">
             Designer B
