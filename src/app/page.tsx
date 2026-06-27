@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import PortfolioGrid from "@/components/PortfolioGrid";
@@ -19,9 +20,19 @@ export default function Home() {
               <span className="text-xs font-semibold text-accent-blue-light tracking-widest uppercase block mb-3">
                 About Designer B
               </span>
-              <h2 className="text-3xl md:text-5xl font-black text-white leading-tight">
+              <h2 className="text-3xl md:text-5xl font-black text-white leading-tight mb-8">
                 Creative Philosophy
               </h2>
+              <div className="relative w-full aspect-[3/4] md:aspect-square lg:aspect-[3/4] max-w-sm rounded-2xl overflow-hidden glass-panel border border-white/10 mx-auto lg:mx-0 shadow-[0_0_40px_rgba(255,255,255,0.05)]">
+                <Image
+                  src="/images/profile.jpg"
+                  alt="Designer B Profile"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  className="object-cover transition-transform duration-700 hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80" />
+              </div>
             </div>
             <div className="lg:w-2/3 space-y-6 text-text-secondary text-base md:text-lg leading-relaxed">
               <p>
