@@ -18,10 +18,10 @@ export const projects: Project[] = [
     tags: ["Logo Design", "Art Direction", "Branding"],
     gallery: [
       "/images/sendo-ramen-gallery-1.png",
-      "/images/sendo-ramen-gallery-2.png",
-      "/images/sendo-ramen-gallery-3.png",
       "/images/sendo-ramen-gallery-4.jpg",
-      "/images/sendo-ramen-gallery-5.jpg"
+      "/images/sendo-ramen-gallery-5.jpg",
+      "/images/sendo-ramen-gallery-2.png",
+      "/images/sendo-ramen-gallery-3.png"
     ],
   },
   {
