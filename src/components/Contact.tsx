@@ -1,20 +1,6 @@
 "use client";
 
-import { useState } from "react";
-
 export default function Contact() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: "", email: "", message: "" });
-    }, 3000);
-  };
-
   return (
     <section id="contact" className="relative py-24 md:py-32 bg-black overflow-hidden border-t border-white/5 grid-bg">
       {/* Background radial glow */}
@@ -71,80 +57,26 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Form Side */}
-          <div className="glass-panel p-8 md:p-12 rounded-3xl relative">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name */}
-              <div>
-                <label htmlFor="name" className="block text-xs font-semibold text-white/70 uppercase tracking-wider mb-2">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="John Doe"
-                  className="w-full bg-white/5 border border-white/10 focus:border-accent-blue focus:ring-1 focus:ring-accent-blue rounded-xl px-4 py-3.5 text-white placeholder-white/20 outline-none transition-all"
-                />
-              </div>
-
-              {/* Email */}
-              <div>
-                <label htmlFor="email" className="block text-xs font-semibold text-white/70 uppercase tracking-wider mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  placeholder="john@example.com"
-                  className="w-full bg-white/5 border border-white/10 focus:border-accent-blue focus:ring-1 focus:ring-accent-blue rounded-xl px-4 py-3.5 text-white placeholder-white/20 outline-none transition-all"
-                />
-              </div>
-
-              {/* Message */}
-              <div>
-                <label htmlFor="message" className="block text-xs font-semibold text-white/70 uppercase tracking-wider mb-2">
-                  Your Message
-                </label>
-                <textarea
-                  id="message"
-                  required
-                  rows={4}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="Tell me about your project..."
-                  className="w-full bg-white/5 border border-white/10 focus:border-accent-blue focus:ring-1 focus:ring-accent-blue rounded-xl px-4 py-3.5 text-white placeholder-white/20 outline-none transition-all resize-none"
-                />
-              </div>
-
-              {/* Submit */}
-              <button
-                type="submit"
-                disabled={submitted}
-                className="w-full py-4 bg-accent-blue hover:bg-accent-blue-light disabled:bg-emerald-600 text-white font-semibold rounded-xl shadow-[0_0_20px_rgba(0,85,255,0.35)] transition-all duration-300 transform active:scale-95 flex items-center justify-center space-x-2"
-              >
-                {submitted ? (
-                  <>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Message Sent!</span>
-                  </>
-                ) : (
-                  <>
-                    <span>Send Message</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </>
-                )}
-              </button>
-            </form>
+          {/* Action Side (Canva Link) */}
+          <div className="glass-panel p-8 md:p-12 rounded-3xl relative flex flex-col items-center justify-center text-center">
+            <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-[#00C4CC] to-[#7D2AE8] flex items-center justify-center mb-6 shadow-[0_0_40px_rgba(125,42,232,0.3)]">
+               <span className="text-white font-bold text-lg font-sans tracking-tight">Canva</span>
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-3">Visit My Canva Profile</h3>
+            <p className="text-text-secondary text-sm md:text-base mb-10 max-w-sm">
+              Discover and use my official Canva templates to elevate your designs instantly.
+            </p>
+            <a
+              href="https://www.canva.com/p/benzzzz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-10 py-4 bg-white text-black font-semibold rounded-full hover:bg-white/90 shadow-[0_4px_20px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center space-x-3"
+            >
+              <span>View Profile</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
 
         </div>
