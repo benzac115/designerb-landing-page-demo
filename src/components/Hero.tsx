@@ -25,7 +25,9 @@ export default function Hero() {
 
         {/* Hero Description */}
         <p className="max-w-2xl text-lg md:text-xl text-text-secondary leading-relaxed mb-10">
-          A creative Designer specializing in Branding Design, Logo Design, Packaging Design, and Templates for Canva by a Canva Creator.
+          A Creative Designer specializing in Branding Design, Logo Design, and Packaging Design.
+          <br className="hidden md:block" />
+          Also crafting custom Templates for Canva as an official Canva Creator.
         </p>
 
         {/* Hero Actions */}
