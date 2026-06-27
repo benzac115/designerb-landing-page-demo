@@ -13,7 +13,7 @@ const pricingTiers = [
     title: "Half-day workshop (3+ hours)",
     price: "฿18,000",
     unit: "per session",
-    features: ["Workshop materials", "Customized content for your team"],
+    features: ["Workshop materials", "Customized content for your team", "Q&A session"],
     highlighted: true,
     badge: "RECOMMENDED",
     action: "Get Started"
@@ -101,7 +101,7 @@ export default function Pricing() {
 
               {/* Action Button */}
               <a
-                href="#contact"
+                href="/#contact"
                 className={`w-full py-3.5 rounded-full font-semibold text-sm transition-all duration-300 flex items-center justify-center ${
                   tier.highlighted
                     ? "bg-white text-black hover:bg-white/90 shadow-lg"
