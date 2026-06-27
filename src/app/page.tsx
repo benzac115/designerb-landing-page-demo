@@ -63,13 +63,14 @@ export default function Home() {
                     <p className="text-xs text-white/50">Attention to Detail</p>
                   </div>
                 </div>
+                
+                {/* Embedded Services List */}
+                <ServicesList />
               </div>
             </div>
 
           </div>
         </section>
-
-        <ServicesList />
         
         <PortfolioGrid />
         <Pricing />
