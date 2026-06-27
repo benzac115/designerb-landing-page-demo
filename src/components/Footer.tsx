@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,8 +9,8 @@ export default function Footer() {
         {/* Logo and tagline */}
         <div className="flex flex-col items-center md:items-start space-y-2">
           <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 rounded bg-accent-blue flex items-center justify-center text-white font-bold text-sm shadow-[0_0_10px_rgba(0,85,255,0.3)]">
-              B
+            <div className="relative w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-[0_0_10px_rgba(255,255,255,0.2)] overflow-hidden">
+              <Image src="/images/logo-face.png" alt="Designer B Logo" fill className="object-cover p-[2px]" sizes="24px" />
             </div>
             <span className="font-sans font-semibold text-sm tracking-tight text-white">
               Designer B
