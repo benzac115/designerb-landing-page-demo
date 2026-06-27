@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import PortfolioGrid from "@/components/PortfolioGrid";
+import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -24,14 +25,11 @@ export default function Home() {
             </div>
             <div className="lg:w-2/3 space-y-6 text-text-secondary text-base md:text-lg leading-relaxed">
               <p>
-                I believe that design is not just how things look, but how they work, move, and respond to user intent. By bridging the gap between aesthetics and function, I create websites and branding systems that feel alive.
-              </p>
-              <p>
-                My process blends grid-based layout precision with organic glowing elements and subtle transitions, delivering a distinct modern visual experience. Every pixel is intentional, and every movement serves a purpose.
+                With over 15 years of industry experience, I have driven 50+ design projects across diverse sectors, balancing corporate identity with commercial edge. As a university lecturer and official Canva Creator, I am dedicated to bridging creative vision with real-world impact, shaping the next generation of designers in Southeast Asia.
               </p>
               <div className="pt-6 grid grid-cols-2 md:grid-cols-3 gap-6">
                 <div>
-                  <h4 className="text-white font-bold text-lg mb-1">05+ Years</h4>
+                  <h4 className="text-white font-bold text-lg mb-1">15+ Years</h4>
                   <p className="text-xs text-white/50">Industry Experience</p>
                 </div>
                 <div>
@@ -48,6 +46,7 @@ export default function Home() {
         </section>
 
         <PortfolioGrid />
+        <Pricing />
         <Contact />
       </main>
       <Footer />
