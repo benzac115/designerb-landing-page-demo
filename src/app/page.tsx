@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
@@ -12,7 +11,6 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-black text-white font-sans selection:bg-accent-blue selection:text-white">
       <Navbar />
       <main className="flex-grow">
-        <Hero />
         
         {/* About Section */}
         <section id="about" className="relative py-24 md:py-32 bg-black overflow-hidden border-t border-white/5">
@@ -37,6 +35,10 @@ export default function Home() {
             {/* Right Column: Text & Stats */}
             <div className="lg:w-2/3 space-y-8 flex flex-col justify-center">
               <div>
+                <h1 className="text-5xl md:text-7xl font-black font-sans leading-[1.1] tracking-tight mb-12">
+                  <span className="block text-white">Hi, I'm</span>
+                  <span className="text-gradient-blue">Designer B</span>
+                </h1>
                 <span className="text-xs font-semibold text-accent-blue-light tracking-widest uppercase block mb-3">
                   About Designer B
                 </span>
@@ -66,6 +68,36 @@ export default function Home() {
                 
                 {/* Embedded Services List */}
                 <ServicesList />
+
+                {/* Hero Actions */}
+                <div className="flex flex-col sm:flex-row items-center gap-4 pt-8">
+                  <a
+                    href="/#works"
+                    className="w-full sm:w-auto px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-white/90 shadow-[0_4px_20px_rgba(255,255,255,0.15)] hover:shadow-[0_4px_25px_rgba(255,255,255,0.25)] hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center space-x-2"
+                  >
+                    <span>View My Work</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="/#contact"
+                    className="w-full sm:w-auto px-8 py-4 bg-transparent text-white font-semibold rounded-full border border-white/20 hover:bg-white/5 hover:border-white/40 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center"
+                  >
+                    Let's Talk
+                  </a>
+                </div>
               </div>
             </div>
 
