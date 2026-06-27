@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -59,8 +60,8 @@ export default function Contact() {
 
           {/* Action Side (Canva Link) */}
           <div className="glass-panel p-8 md:p-12 rounded-3xl relative flex flex-col items-center justify-center text-center">
-            <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-[#00C4CC] to-[#7D2AE8] flex items-center justify-center mb-6 shadow-[0_0_40px_rgba(125,42,232,0.3)]">
-               <span className="text-white font-bold text-lg font-sans tracking-tight">Canva</span>
+            <div className="relative w-32 h-32 mb-6 rounded-full overflow-hidden shadow-[0_0_50px_rgba(125,42,232,0.4)] ring-4 ring-white/10 hover:scale-105 transition-transform duration-500">
+               <Image src="/images/canva-badge.png" alt="Canva Creator Badge" fill sizes="128px" className="object-cover" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">Visit My Canva Profile</h3>
             <p className="text-text-secondary text-sm md:text-base mb-10 max-w-sm">
