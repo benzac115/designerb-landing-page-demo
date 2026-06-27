@@ -22,10 +22,10 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex items-center space-x-6 text-xs text-white/50">
-          <a href="#" className="hover:text-white transition-colors">Home</a>
-          <a href="#works" className="hover:text-white transition-colors">Works</a>
-          <a href="#about" className="hover:text-white transition-colors">About</a>
-          <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+          <a href="/" className="hover:text-white transition-colors">Home</a>
+          <a href="/#works" className="hover:text-white transition-colors">Works</a>
+          <a href="/#about" className="hover:text-white transition-colors">About</a>
+          <a href="/#contact" className="hover:text-white transition-colors">Contact</a>
         </div>
 
         {/* Copyright */}

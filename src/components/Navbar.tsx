@@ -27,7 +27,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center space-x-2 group">
+        <a href="/" className="flex items-center space-x-2 group">
           <div className="w-8 h-8 rounded-lg bg-accent-blue flex items-center justify-center text-white font-bold text-lg shadow-[0_0_15px_rgba(0,85,255,0.4)] group-hover:scale-105 transition-transform">
             B
           </div>
@@ -39,28 +39,28 @@ export default function Navbar() {
         {/* Navigation Links */}
         <nav className="hidden md:flex items-center space-x-8">
           <a
-            href="#"
+            href="/"
             className="text-sm font-medium text-white/80 hover:text-white transition-colors relative group"
           >
             Home
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent-blue transition-all duration-300 group-hover:w-full" />
           </a>
           <a
-            href="#works"
+            href="/#works"
             className="text-sm font-medium text-white/80 hover:text-white transition-colors relative group"
           >
             Works
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent-blue transition-all duration-300 group-hover:w-full" />
           </a>
           <a
-            href="#about"
+            href="/#about"
             className="text-sm font-medium text-white/80 hover:text-white transition-colors relative group"
           >
             About
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent-blue transition-all duration-300 group-hover:w-full" />
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="px-4 py-2 text-sm font-medium text-white bg-accent-blue hover:bg-accent-blue-light rounded-full shadow-[0_0_15px_rgba(0,85,255,0.35)] hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 transform hover:-translate-y-0.5"
           >
             Contact Me
