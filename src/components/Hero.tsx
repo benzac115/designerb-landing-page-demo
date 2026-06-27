@@ -25,7 +25,7 @@ export default function Hero() {
 
         {/* Hero Description */}
         <p className="max-w-2xl text-lg md:text-xl text-text-secondary leading-relaxed mb-10">
-          A Creative Designer specializing in Branding Design, Logo Design, and Packaging Design.
+          A Creative Designer specializing in Packaging Design, Branding Design, and Logo Design.
           <br className="hidden md:block" />
           Also crafting custom Templates for Canva as an official Canva Creator.
         </p>
@@ -62,7 +62,7 @@ export default function Hero() {
 
         {/* Skills Tagline / Badges */}
         <div className="flex flex-wrap justify-center gap-3">
-          {["Branding Design", "Logo Design", "Packaging Design", "Canva Templates", "Canva Creator"].map((skill, index) => (
+          {["Packaging Design", "Branding Design", "Logo Design", "Canva Templates", "Canva Creator"].map((skill, index) => (
             <span
               key={index}
               className="px-4 py-2 rounded-lg bg-card-dark border border-border-dark text-xs font-semibold text-white/70 hover:text-white hover:border-accent-blue/30 transition-all duration-300 cursor-default"
