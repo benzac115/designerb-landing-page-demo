@@ -31,7 +31,12 @@ export const projects: Project[] = [
     description: "Forty years of flavour — finally matched by a brand that deserves it. RosTurbo is a beloved braised duck noodle shop with deep roots and loyal regulars.",
     image: "/images/framer02.png",
     tags: ["Branding", "Logo Design", "Copywriting"],
-    gallery: ["/images/work02.jpg", "/images/work03.jpg", "/images/work01.jpg"],
+    gallery: [
+      "/images/rosturbo-gallery-1.jpg",
+      "/images/rosturbo-gallery-2.png",
+      "/images/rosturbo-gallery-3.png",
+      "/images/rosturbo-gallery-4.png"
+    ],
   },
   {
     id: "03",
